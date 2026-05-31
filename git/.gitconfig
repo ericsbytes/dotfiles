@@ -1,0 +1,30 @@
+# This is Git's per-user configuration file.
+[user]
+	name = eric wu
+	email = lite@duck.com
+	signingkey = ~/.ssh/id_rsa.pub
+
+[gpg]
+	format = ssh
+
+[commit]
+	gpgsign = true
+
+[init]
+	defaultBranch = main
+
+[core]
+	excludesFile = ~/.gitignore
+	pager = delta
+
+[push]
+	autoSetupRemote = true
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true  # use n and N to move between diff sections
+
+[merge]
+    conflictStyle = zdiff3
