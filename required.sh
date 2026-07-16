@@ -5,6 +5,7 @@ DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PACKAGES=(
   git
   nvim
+  tmux
 )
 
 # CHECK: does stow exist?
