@@ -2,7 +2,7 @@
 [user]
 	name = eric wu
 	email = lite@duck.com
-	signingkey = ~/.ssh/id_rsa.pub
+	signingkey = ~/.ssh/id_ed25519.pub
 
 [gpg]
 	format = ssh
@@ -15,16 +15,9 @@
 
 [core]
 	excludesFile = ~/.gitignore
-	pager = delta
 
 [push]
 	autoSetupRemote = true
-
-[interactive]
-    diffFilter = delta --color-only
-
-[delta]
-    navigate = true  # use n and N to move between diff sections
 
 [merge]
     conflictStyle = zdiff3
